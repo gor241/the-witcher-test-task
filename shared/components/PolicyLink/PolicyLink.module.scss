@@ -1,0 +1,18 @@
+.policy-link {
+    font-size: var(--link-font-size);
+    font-weight: var(--link-weight);
+    line-height: var(--link-line-height);
+    color: var(--color-foreground);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+    position: relative;
+    opacity: 0.8;
+  
+    &:hover {
+      opacity: 1;
+    }
+  }
+  

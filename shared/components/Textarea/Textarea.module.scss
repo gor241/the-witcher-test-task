@@ -1,0 +1,37 @@
+.textarea-wrapper {
+    width: var(--form-width);
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: var(--p-font-size);
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: var(--spacing-select);
+    height: 156px;
+    border: none;
+    font-size: var(--p-font-size);
+    resize: none; 
+    background: var(--form-background);
+    color: var(--color-foreground);
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  

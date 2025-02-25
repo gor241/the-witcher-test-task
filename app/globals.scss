@@ -13,13 +13,26 @@
   /* Основные цвета */
   --color-background: #ededed;
   --color-foreground: #181818;
-  --primary-color: #FF1E1E; 
+  --primary-color: #EC3F3F;
   --secondary-color: #EC3F3F1A;
+  --hover-color: #FF1E1E; 
+  --form-background: #2f2f2f;
+  --error-color: #FF5858;
 
-  /* Отступы */
-  --spacing-small: 16px;
-  --spacing-medium: 64px;
-  --spacing-large: 72px;
+
+  /* Отступы в layout */
+  --spacing-block: 72px;
+
+  /* Отступы в формах */
+  --spacing-form: 8px;
+  --spacing-select: 18px 20px;
+
+  /* Отступы в кнопках */
+  --button-width-small: 32px;
+  --button-width-medium: 44.5px;
+  --button-width-large: 64px;
+  --button-hight-small: 12px;
+  --button-hight-medium: 16px;
 
   /* Ширина селекта и инпутов */
   --form-width: 486px;
@@ -65,6 +78,9 @@
 /* Tablet (макс. 768px) */
 @media (max-width: 768px) {
   :root {
+    --spacing-block: 64px;
+    --spacing-form: 0;
+    --spacing-select: 16px 20px;
     --form-width: 320px;
     --h1-font-size: 40px;
     --h1-line-height: 40px;
@@ -82,6 +98,7 @@
 /* Mobile (макс. 360px) */
 @media (max-width: 360px) {
   :root {
+    --spacing-block: 16px;
     --h1-font-size: 32px;
     --h1-line-height: 38px;
     --h2-font-size: 28px;

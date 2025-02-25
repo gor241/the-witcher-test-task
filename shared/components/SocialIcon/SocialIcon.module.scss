@@ -1,0 +1,16 @@
+.icon {
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  
+    &:hover {
+      background-color: var(--error-color);
+    }
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+  
