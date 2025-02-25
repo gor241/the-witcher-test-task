@@ -1,42 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  --background: #fff;
-  --foreground: #171717;
+  /* Шрифт */
+  --font-family: 'Futura PT', sans-serif;
+
+  /* Основные цвета */
+  --color-background: #ededed;
+  --color-foreground: #181818;
+  --primary-color: #FF1E1E; 
+  --secondary-color: #EC3F3F1A;
+
+  /* Отступы */
+  --spacing-small: 16px;
+  --spacing-medium: 64px;
+  --spacing-large: 72px;
+
+  /* Ширина селекта и инпутов */
+  --form-width: 486px;
+  
+  /* Бордер */
+  --border-value: 1px solid #EC3F3FCC;
+
+  /* Затемнение */
+  --box-shadow-value: 0 2px 24px 0 #FF1E1E80;
+
+  /* Типографика (Desktop 1440px) */
+  --h1-weight: 600;
+  --h1-font-size: 56px;
+  --h1-line-height: 56px;
+  --h2-weight: 600;
+  --h2-font-size: 40px;
+  --h2-line-height: 48px;
+  --h3-weight: 600;
+  --h3-font-size: 32px;
+  --h3-line-height: 40px;
+  --h4b-weight: 600;
+  --h4b-font-size: 24px;
+  --h4b-line-height: 32px;
+  --h4-weight: 400;
+  --h4-font-size: 24px;
+  --h4-line-height: 32px;
+
+  /* Параграфы */
+  --p-weight: 400;
+  --p-font-size: 16px;
+  --p-line-height: 20px;
+  --p-bold-weight: 600;
+  --p-bold-font-size: 16px;
+  --p-bold-line-height: 24px;
+
+  /* Ссылка */
+  --link-weight: 400;
+  --link-font-size: 14px;
+  --link-line-height: 20px;
+  --link-text-decoration: underline solid #FFF;
+}
+
+/* Tablet (макс. 768px) */
+@media (max-width: 768px) {
+  :root {
+    --form-width: 320px;
+    --h1-font-size: 40px;
+    --h1-line-height: 40px;
+    --h2-font-size: 32px;
+    --h2-line-height: 40px;
+    --h3-font-size: 24px;
+    --h3-line-height: 32px;
+    --h4b-font-size: 20px;
+    --h4b-line-height: 28px;
+    --h4-font-size: 20px;
+    --h4-line-height: 28px;
+  }
+}
+
+/* Mobile (макс. 360px) */
+@media (max-width: 360px) {
+  :root {
+    --h1-font-size: 32px;
+    --h1-line-height: 38px;
+    --h2-font-size: 28px;
+    --h2-line-height: 36px;
+    --h3-font-size: 24px;
+    --h3-line-height: 32px;
+    --h4b-font-size: 16px;
+    --h4b-line-height: 24px;
+    --h4-font-size: 16px;
+    --h4-line-height: 24px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
   }
 }
 
 html,
 body {
-  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family);
+  background: var(--color-background);
+  color: var(--color-foreground);
+  line-height: 1.6;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-futura-pt), sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
