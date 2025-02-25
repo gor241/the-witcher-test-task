@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: "Witcher Project",
@@ -28,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru">
       <body className={futuraPt.variable}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
