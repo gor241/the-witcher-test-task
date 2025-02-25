@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 const futuraPt = localFont({
   src: [
     {
-      path: "../../public/fonts/futura_pt_book.woff2",
+      path: "../public/fonts/futura_pt_book.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/futura_pt_demi.woff2",
+      path: "../public/fonts/futura_pt_demi.woff2",
       weight: "600",
       style: "normal",
     },
