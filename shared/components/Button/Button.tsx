@@ -7,7 +7,7 @@ type ButtonProps = {
   disabled?: boolean;
   onClick?: () => void;
   children: React.ReactNode;
-  fullWidth: boolean
+  fullWidth?: boolean
 };
 
 export const Button: React.FC<ButtonProps> = ({

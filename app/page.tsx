@@ -5,6 +5,8 @@ import React from 'react';
 import styles from './page.module.scss'
 import { ActorsSection } from '@/widgets/ActorsSection/ActorsSection';
 import { GallerySection } from '@/widgets/GallerySection/GallerySection';
+import { MapSection } from '@/widgets/MapSection/MapSection';
+
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
       <div className="container">
         <GallerySection />
       </div>
-      {/* <MapSection /> */}
+      <MapSection />
     </main>
   );
 }

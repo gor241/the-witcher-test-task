@@ -17,6 +17,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
+    "react-yandex-maps": "^4.6.0",
     "sass": "^1.85.1"
   },
   "devDependencies": {
