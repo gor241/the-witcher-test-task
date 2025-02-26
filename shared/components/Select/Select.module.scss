@@ -1,6 +1,7 @@
 .select-wrapper {
+  flex: 1;
+  min-width: 0;
   position: relative;
-  width: var(--form-width);
   padding-bottom: 24px;
 }
 
@@ -68,6 +69,10 @@
 
 .selected-option {
   color: var(--color-foreground);
+}
+
+.error {
+  background: #3f0a0e;
 }
 
 .error-message {

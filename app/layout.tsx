@@ -4,6 +4,7 @@ import "./globals.scss";
 import { Providers } from './providers';
 import { Header } from '@/widgets/Header/Header';
 import { Footer } from '@/widgets/Footer/Footer';
+import { PolicyModal } from '@/features/ui/PolicyModal/PolicyModal';
 
 export const metadata: Metadata = {
   title: 'Witcher Project',
@@ -42,6 +43,7 @@ export default function RootLayout({
             </div>
             {children}
             <Footer />
+            <PolicyModal />
           </Providers>
         </div>
       </body>

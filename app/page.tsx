@@ -6,7 +6,6 @@ import styles from './page.module.scss'
 import { ActorsSection } from '@/widgets/ActorsSection/ActorsSection';
 import { GallerySection } from '@/widgets/GallerySection/GallerySection';
 import { MapSection } from '@/widgets/MapSection/MapSection';
-import { PolicyModal } from '@/features/ui/PolicyModal/PolicyModal';
 
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
         <GallerySection />
       </div>
       <MapSection />
-      <PolicyModal />
     </main>
   );
 }

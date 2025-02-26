@@ -4,12 +4,8 @@
     padding-bottom: 24px;
   }
   
-  .error-message {
-    position: absolute;
-    bottom: 2px; 
-    left: 0;
-    color: var(--error-color);
-    font-size: 12px;
+  .error {
+    background-color: #3f0a0e;
   }
   
   .checkbox-label {
@@ -25,17 +21,20 @@
   
     & ~ .custom-box {
         border-color: #FFFFFF4D;
+        background: var(--form-background);
         border-radius: 0;
         width: 32px;
         height: 32px;
+        min-height: 32px;
+        min-width: 32px;
       }
-
-    &.error ~ .custom-box {
-      border-color: var(--error-color);
-    }
   
     &:checked ~ .custom-box {
-      background-color: var(--form-background);
+      background: var(--form-background);
+    }
+
+    &.error ~ .custom-box {
+      background: #3f0a0e;
     }
   
     &:checked ~ .custom-box::after {

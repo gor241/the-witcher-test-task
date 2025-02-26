@@ -1,0 +1,146 @@
+.request-section {
+    flex: 1;
+
+    .form-wrapper {
+      display: flex;
+      gap: 80px;
+      margin-top: 24px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-form);
+      flex: 1;
+    }
+
+    .row-box {
+        display: flex;
+        gap: 24px;
+      }
+
+    .file-field {
+        position: relative;
+        margin-bottom: 15px;
+
+        .file-label {
+          display: flex;
+          align-items: center;
+          background: var(--form-background);
+          padding: var(--spacing-select);
+          cursor: pointer;
+          position: relative;
+    
+          input[type="file"] {
+            display: none;
+          }
+    
+          .file-placeholder {
+            flex: 1;
+          }
+        }
+      }
+  }
+
+  .file-label.file-error {
+    background: #3f0a0e !important;
+}
+
+
+  .btn-box {
+    max-width: 295px;
+}
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .success-section {
+    padding: 40px 0;
+    flex: 1;
+  }
+
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 32px;
+    background: inherit;
+    padding-top: 4px;
+  }
+
+  .paragraph {
+    font-size: var(--p-font-size);
+    font-weight: var(--p-weight);
+    line-height: var(--p-line-height);
+    opacity: 0.6;
+  }
+
+  .h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-weight);
+    line-height: var(--h2-line-height);
+  }
+
+  .h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-weight);
+    line-height: var(--h1-line-height);
+    padding: 15px 0;
+  }
+
+  .h4 {
+    font-size: var(--h4-font-size);
+    font-weight: var(--h4-weight);
+    line-height: var(--h4-line-height);
+    margin-bottom: 16px;
+  }
+
+  .success-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 450px;
+    flex: 1;
+  }
+
+  .success-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .form-wrapper {
+        gap: 42px !important;
+      }
+
+    .row-box {
+        flex-direction: column;
+        gap: 0 !important;
+      }
+
+      .success-container {
+        gap: 42px !important;
+      }
+
+  }
+  
+
+  @media (max-width: 520px) {
+    .request-section {
+        margin-bottom: 56px;
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+      }
+
+      .success-container {
+        flex-direction: column;
+      }
+  }

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    height: 88px;
     background-color: var(--color-background);
   }
   
@@ -25,7 +25,7 @@
   
   @media (max-width: 768px) {
     .header {
-      padding: 12px 0;
+      height: 72px;
     }
 
     .logo {
@@ -36,6 +36,6 @@
 
   @media (max-width: 360px) {
     .header {
-        padding: 16px 0;
+      height: 80px;
     }
   }

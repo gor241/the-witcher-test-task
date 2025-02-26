@@ -1,7 +1,8 @@
 .textarea-wrapper {
-    width: var(--form-width);
-    position: relative;
-    margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  padding-bottom: 24px;
   }
   
   .label {
@@ -26,12 +27,15 @@
   }
   
   .error {
-    border-color: red;
+    background: #3f0a0e;
   }
   
   .error-message {
-    color: red;
+    min-height: 20px;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    color: var(--error-color);
     font-size: 12px;
-    margin-top: 4px;
   }
   
