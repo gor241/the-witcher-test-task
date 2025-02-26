@@ -1,0 +1,122 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0 0 0 / 50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .modal {
+    background: #fff;
+    color: black;
+    width: 920px;
+    max-height: 90vh;
+    padding: 56px 80px;
+    position: relative;
+    overflow-y: auto;
+    margin: 0  24px;
+  }
+  
+  .title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-weight);
+    line-height: var(--h2-line-height);
+    margin-bottom: 32px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .paragraph-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: var(--p-font-size);
+  }
+
+  .bold-paragraph {
+    font-weight: var(--p-bold-weight);
+    line-height: var(--p-bold-line-height);
+  }
+
+  .norm-paragraph {
+    font-weight: var(--p-weight);
+    line-height: var(--p-line-height);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    background: none;
+    border: none;
+    font-size: 24px; /* Размер иконки «X» */
+    cursor: pointer;
+    color: #999;     /* Цвет иконки */
+    transition: color 0.2s ease;
+  
+    &:hover {
+      color: #666;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .modal {
+      width: 90%;
+      max-height: 90vh;
+      padding: 48px 40px;
+      margin: 0 16px;
+    }
+
+    .title {
+        margin-bottom: 24px;
+      }
+
+      .content {
+        gap: 32px;
+      }
+
+      .paragraph-blocks {
+        gap: 16px;
+      }
+  }
+  
+  @media (max-width: 390px) {
+    .modal {
+      min-width: 100%;
+      min-height: 100%;
+      padding: 24px 16px;
+      margin: 0;
+    }
+
+    .content {
+        gap: 24px;
+      }
+
+    .paragraph-blocks {
+        gap: 12px;
+      }
+
+    .close-btn {
+        top: 24px;
+        right: 16px;
+      }
+  }

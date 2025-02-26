@@ -1,25 +1,25 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 interface UIState {
-  darkMode: boolean;
+  isPolicyOpen: boolean;
 }
 
 const initialState: UIState = {
-  darkMode: false,
+  isPolicyOpen: false,
 };
 
 const uiSlice = createSlice({
   name: 'ui',
   initialState,
   reducers: {
-    toggleDarkMode: (state) => {
-      state.darkMode = !state.darkMode;
+    openPolicyModal: (state) => {
+      state.isPolicyOpen = true;
     },
-    setDarkMode: (state, action: PayloadAction<boolean>) => {
-      state.darkMode = action.payload;
+    closePolicyModal: (state) => {
+      state.isPolicyOpen = false;
     },
   },
 });
 
-export const { toggleDarkMode, setDarkMode } = uiSlice.actions;
+export const { openPolicyModal, closePolicyModal } = uiSlice.actions;
 export default uiSlice.reducer;

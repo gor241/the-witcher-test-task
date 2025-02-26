@@ -36,11 +36,13 @@ export default function RootLayout({
     <html lang="ru">
       <body className={futuraPt.variable}>
         <div className="wrapper">
-          <div className="container">
-            <Header />
-          </div>
-          <Providers>{children}</Providers>
-          <Footer />
+          <Providers>
+            <div className="container">
+              <Header />
+            </div>
+            {children}
+            <Footer />
+          </Providers>
         </div>
       </body>
     </html>
