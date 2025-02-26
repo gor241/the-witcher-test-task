@@ -1,0 +1,89 @@
+.card {
+    flex: 0 0 auto;
+    position: relative;
+    width: 282px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-2px);
+  
+      .image {
+        opacity: 0.8;
+      }
+  
+      .text-overlay {
+        display: flex;
+        justify-content: flex-start;
+  
+        .top-texts {
+          margin-bottom: auto;
+        }
+
+        .description {
+          margin-top: 8px;
+          color: #fff;
+          opacity: 1;
+          max-height: 200px;
+        }
+      }
+    }
+  }
+  
+  .image {
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    pointer-events: none;
+  
+    .description {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.3s ease, max-height 0.3s ease;
+    }
+  }
+  
+  .top-texts {
+    p {
+      margin: 0;
+      color: #fff;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .hero-name {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .actor-name {
+      font-weight: 400;
+      opacity: 0.9;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 258px;
+      height: 360px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .card {
+      width: 216px;
+      height: 280px;
+    }
+  }
+  
