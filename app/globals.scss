@@ -6,6 +6,13 @@
   padding: 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 :root {
   /* Шрифт */
   --font-family: 'Futura PT', sans-serif;
@@ -93,6 +100,10 @@
     --h4-font-size: 20px;
     --h4-line-height: 28px;
   }
+
+  .container {
+    max-width: 640px;
+  }
 }
 
 /* Mobile (макс. 360px) */
@@ -109,6 +120,10 @@
     --h4b-line-height: 24px;
     --h4-font-size: 16px;
     --h4-line-height: 24px;
+  }
+
+  .container {
+    max-width: 328px;
   }
 }
 

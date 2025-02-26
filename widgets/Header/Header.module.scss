@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: var(--color-background);
+  }
+  
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button{
+    text-decoration: none;
+    display: inline-flex;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 12px 0;
+    }
+
+    .logo {
+      margin-right: 5px;
+    }
+  }
+  
+
+  @media (max-width: 360px) {
+    .header {
+        padding: 16px 0;
+    }
+  }
