@@ -36,5 +36,10 @@
     &.large {
       padding: var(--button-hight-medium) var(--button-width-large);
     }
+
+    &.full-width {
+      width: 100%;
+      display: block;
+    }
   }
   
