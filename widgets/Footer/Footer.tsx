@@ -12,14 +12,11 @@ import styles from "./Footer.module.scss";
 export const Footer: React.FC = () => {
 
   const isMobile = useIsMobile(768);
-  const handlePolicyClick = () => {
-    // openModal();
-  };
 
   return (
     <footer className={styles.footer}>
       <div className="container">
-      {isMobile ? (
+        {isMobile ? (
           <div className={styles['mobile-footer']}>
             <div className={styles['top-row']}>
               <Link href="/" className={styles['logo-link']}>
@@ -38,7 +35,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className={styles['bottom-row']}>
-              <PolicyLink onClick={handlePolicyClick} multiline={!isMobile} />
+              <PolicyLink multiline={!isMobile} />
             </div>
           </div>
         ) : (
@@ -52,7 +49,7 @@ export const Footer: React.FC = () => {
               />
             </Link>
 
-            <PolicyLink onClick={handlePolicyClick} multiline={!isMobile} />
+            <PolicyLink multiline={!isMobile} />
 
             <div className={styles.socials}>
               <SocialIcon type="instagram" />
